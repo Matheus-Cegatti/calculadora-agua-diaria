@@ -60,35 +60,50 @@ body {
     border-radius: 5px;
 }
 
+
 .sobre-agua {
+    align-items: flex-end;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    width: 100%;
 }
 
-.beneficios,
-.prejuizos,
-.rins-problema {
+.lista-beneficios {
     border: 1px solid var(--color-border);
     border-radius: 7px;
     background-color: var(--color-section);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-bottom: 2.5rem;
+    max-width: 300px;
+    width: 100%;
 }
 
 .imagem-sobre {
     width: 10rem;
     display: block;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .titulo-section {
     font-family:var(--font-paragraph) ;
     font-weight: 700;
+    border-bottom: 1px solid var(--color-border);
+    margin: 0.5rem 0;
+    padding: 1rem 0;
+    text-align: center
+}
+
+.conteudo-sessao {
+    margin-bottom: 0.5rem;
+    padding: 0.2rem 2rem;
 }
 
 .lista-section {
     font-family: var(--font-paragraph);
     font-size: 0.8rem;
+    text-align: center;
+    color: var(--color-paragraph);
+    font-weight: 700;
+    margin-bottom: 0.3rem;
 }
