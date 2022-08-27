@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,24 +9,79 @@
     <link rel="stylesheet" href="./style/global.css">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600;700&family=Libre+Franklin:wght@100;300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600;700&family=Libre+Franklin:wght@100;300;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Calculadora de agua</title>
 </head>
+
 <body>
     <header class="cabeçalho">
         <img class="imagem-logo" src="./Imagens/kidney logo.jpg" alt="2 rins de desenho felizes">
         <h1 class="titulo-site">Calculadora de agua para o corpo!</h1>
     </header>
 
-    <main>
+    <main class="sessao-calcular">
         <div class="principal-calculo">
-            <h2 class="titulo-main">Coloque aqui o seu peso atual.</h2>
-            <input type="text" name="" id="" class="input-peso">
+            <div class="calculadora">
+                <h2 class="titulo-main">Coloque aqui o seu peso atual.</h2>
+                <input type="text" name="" id="" class="input-peso">
+                <button class="btn-confirmar" type="submit">Confirmar</button>
+            </div>
+            <section class="sobre-agua">
+                <div class="beneficios">
+                    <img src="./Imagens/agua-copo.jpg" alt="" class="imagem-sobre">
+                    <h4 class="titulo-section">Beneficios de se tomar bastante agua!</h4>
+                    <ul class="lista-beneficios">
+                        <li class="lista-section">Auxilia o bom funcionamento dos rins</li>
+                        <li class="lista-section">Limpa o organismo</li>
+                        <li class="lista-section">Ajuda a não reter líquidos</li>
+                        <li class="lista-section">Regulador térmico</li>
+                        <li class="lista-section">Desintoxica o organismo</li>
+                        <li class="lista-section">Aumenta massa muscular</li>
+                        <li class="lista-section">Combate o envelhecimento</li>
+                        <li class="lista-section">Ajuda a emagrecer</li>
+                        <li class="lista-section">Contra a constipação</li>
+                        <li class="lista-section">Fundamental para a saúde</li>
+                    </ul>
+                </div>
+                <div class="prejuizos">
+                    <img src="./Imagens/sad-water.jpg" alt="" class="imagem-sobre">
+                    <h4 class="titulo-section">Males que a falta de agua faz para o nosso corpo</h4>
+                    <ul>
+                        <li class="lista-section">Piora da memória e do raciocínio</li>
+                        <li class="lista-section">Envelhecimento da pele</li>
+                        <li class="lista-section">Mau halito</li>
+                        <li class="lista-section">Queda no desempenho escolar</li>
+                        <li class="lista-section">Dificuldade para perder peso</li>
+                        <li class="lista-section">Cansaço diario</li>
+                        <li class="lista-section">Dor de cabeça</li>
+                    </ul>
+                </div>
+                <div class="rins-problema">
+                    <img src="./Imagens/sad-kidney.jpg" alt="" class="imagem-sobre">
+                    <h4 class="titulo-section">Dados sobre calculo renal</h4>
+                    <ul>
+                        <li class="lista-section">Doença que pode atingir até 15% da população mundial</li>
+                        <li class="lista-section">Aproximadamente, duas vezes mais comum nos homens do que nas mulheres.</li>
+                        <!-- <li class="lista-section">Ingerir pouca água, tomar muito refrigerante e consome sódio e proteína em excesso.</li> -->
+                        <li class="lista-section">5% dos cálculos renais podem estar associados a infecções urinárias</li>
+                        <li class="lista-section">Estima-se que 1 em cada 10 pessoas no Brasil sofra de cálculo renal.</li>
+                        <li class="lista-section">Mais comum entre adultos jovens, entre os 20 a 35 anos</li>
+                    </ul>
+                </div>
 
+            </section>
         </div>
+
+
     </main>
 
-    
+
 </body>
+
 </html>
