@@ -13,6 +13,7 @@ body {
 
 .imagem-logo {
     width: 10%;
+    margin: 0.5rem 0;
 }
 
 .titulo-site {
@@ -44,27 +45,55 @@ body {
 }
 
 .input-peso {
-    align-items: center;
-    border: 2px solid var(--color-border);
+    border: 1px solid var(--color-border);
     border-radius: 5px;
     width: 7rem;
     margin-bottom: 0.5rem;
     padding: 0.5rem 1.5rem;
 }
 
-.btn-confirmar {
-    background-color: var(--color-btn);
+#btn-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.15rem;
     margin-bottom: 1rem;
+}
+
+#btn-principal .input-peso {
+    grid-column: span 3;
+}
+
+#btn-principal .btn-confirmar {
+    grid-column: span 2;
+}
+
+.btn-calculadora,
+.btn-confirmar {
     border: 1px solid var(--color-border);
     border-radius: 5px;
-    padding: 1rem 2.5rem;
+    padding: 1rem;
+}
+
+.btn-calculadora {
+    background-color: var(--color-btn--calculadora);
+    
+}
+
+.btn-calculadora:hover {
+    background-color: var(--color-hover--calculadora);
+    cursor: pointer;
+}
+
+.btn-confirmar {
+    background-color: var(--color-btn--confirmar);
     font-family: var(--font-body);
     font-weight: 700;
 }
 
 .btn-confirmar:hover {
-    padding: 1rem 2.8rem;
-    font-size: 1.1rem;
+    background-color: var(--color-hover--confirmar);
+    cursor: pointer;
+
 }
 
 .sobre-agua {
