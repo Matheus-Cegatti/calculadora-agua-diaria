@@ -14,11 +14,13 @@ class Calculadora {
     }
 
     atualizaTela() {
-        this.numeroNaTela.value += this.numero;
-        console.log(numeroNaTela);
-        if(numeroNaTela.value.length >= 4) {
-            // numeroNaTela.setAttribute("disabled", "disabled")
+
+        if(numeroNaTela.value.length <= 3) {
+            this.numeroNaTela.value += this.numero;
+
         }
+        // console.log(numeroNaTela);
+    
         // console.log(numero);
     }
 }
@@ -30,7 +32,7 @@ botoes.forEach((btn) => {
     btn.addEventListener("click", (evento) => {
         const valor = evento.target.innerText
 
-        // console.log(valor);
+        console.log(valor);
 
         if(+valor >= 0 || valor === ".") {
             // console.log(valor);
