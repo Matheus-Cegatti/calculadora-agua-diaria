@@ -1,7 +1,19 @@
 const botoes = document.querySelectorAll(".btn-calculadora");
-// const botaoResultado = document.querySelector(".btn-confirmar");
-const botaoDeOperacao = document.querySelectorAll(".btn-operacao")
+const botaoResultado = document.querySelector(".btn-confirmar");
+const botaoDeOperacao = document.querySelectorAll(".btn-operacao");
 const numeroNaTela = document.querySelector(".tela-calculadora");
+const resultadoAparece = document.querySelector(".tela-resultado");
+
+
+//digitando só numero e ponto 
+
+numeroNaTela.addEventListener("keypress", function(e){
+    const charCode = (e.charCode ? e.charCode : e.wich);
+    console.log(charCode);
+    if(charCode < 45 || charCode > 58 || charCode === 47 ){
+        e.preventDefault();
+    }
+})
 
 class Calculadora {
     constructor(numeroNaTela) {
@@ -13,6 +25,8 @@ class Calculadora {
         if (digito === "." && numeroNaTela.value.includes(".")) {
             return;
         }
+
+
         // console.log(digito);
         this.numero = digito;
         this.atualizaTela();
@@ -20,7 +34,7 @@ class Calculadora {
 
     atualizaTela() {
 
-        if (numeroNaTela.value.length <= 3) {
+        if (numeroNaTela.value.length <= 4) {
             this.numeroNaTela.value += this.numero;
 
         }
@@ -33,6 +47,7 @@ function operacoes() {
         operacao.addEventListener("click", () => {
             if(operacao.textContent === "C") {
                 apagarCalculadora()
+                resultadoAparece.textContent = ""
             }else if(operacao.textContent === "DEL") {
                 deletarNumero();
             }else if(operacao.textContent === "Confirmar") {
@@ -55,9 +70,17 @@ function deletarNumero() {
 }
 
 function confirmaResultado() {
-    alert(`Você precisa tomar " ${numeroNaTela.value = numeroNaTela.value*35/1000} " litros de agua por dia`);
-    apagarCalculadora();
-}
+
+    // if(numeroNaTela != digValido){
+    //     resultadoAparece.textContent ="Teste"
+    // }else{
+        resultadoAparece.textContent =`Você precisa tomar no minimo  ${numeroNaTela.value = Math.round(numeroNaTela.value*35)/1000} litros de agua por dia`;
+        apagarCalculadora();
+    }
+// }
+
+
+
 
 
 const calc = new Calculadora(numeroNaTela);
