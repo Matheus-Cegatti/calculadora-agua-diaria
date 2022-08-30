@@ -139,10 +139,14 @@ body {
 }
 
 .sessao-saiba--mais{
-    /* display: none; */
+    display: none;
     background: linear-gradient(33deg, #C9BBCF, #748DA6, #9A86A4);
-    height: 10rem;
-    padding: 0.5rem;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.sessao-ativada {
+    display: block;
 }
 
 .sobre-agua {

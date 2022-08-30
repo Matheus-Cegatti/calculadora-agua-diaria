@@ -3,7 +3,13 @@ const botaoResultado = document.querySelector(".btn-confirmar");
 const botaoDeOperacao = document.querySelectorAll(".btn-operacao");
 const numeroNaTela = document.querySelector(".tela-calculadora");
 const resultadoAparece = document.querySelector(".tela-resultado");
+const botaoSaibaMais = document.querySelector(".btn-saiba--mais");
+const sessaoSaibaMais = document.querySelector(".sessao-saiba--mais");
 
+
+botaoSaibaMais.addEventListener("click", () => {
+        sessaoSaibaMais.classList.toggle("sessao-ativada")
+    })
 
 //digitando só numero e ponto 
 
@@ -103,3 +109,4 @@ botoes.forEach((btn) => {
 
 operacoes()
 // console.log(botoes);
+
