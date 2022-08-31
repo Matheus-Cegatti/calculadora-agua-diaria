@@ -127,7 +127,7 @@ body {
 
 .btn-saiba--mais:hover {
     cursor: help;
-    background: linear-gradient();
+    background: linear-gradient(50deg, #9A86A4, #748DA6,#C9BBCF);
 }
 
 .saiba-mais {
