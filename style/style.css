@@ -37,7 +37,6 @@ body {
     flex-direction: column;
     /* align-items: center; */
     margin: 0 auto;
-    width: 20%;
 }
 
 .titulo-main {
@@ -205,4 +204,49 @@ body {
     margin: 0 auto;
     display: block;
     padding: 0.5rem 0;
+}
+
+
+@media screen and (max-width: 767px) {
+    .titulo-site {
+        font-size: 1rem;
+    }
+    
+    .titulo-main {
+       
+        text-align: center;
+    }
+    
+    .sobre-agua {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .imagem-rodape {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+    .calculadora {
+        width: 30%;
+    }
+
+    .tela-calculadora {
+        padding: 0.7rem 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .btn-calculadora, 
+    .btn-confirmar {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (min-width: 1281px) {
+    .calculadora {
+        width: 25%;
+    }
 }

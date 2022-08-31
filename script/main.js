@@ -136,3 +136,7 @@ botoes.forEach((btn) => {
 operacoes()
 // console.log(botoes);
 
+// dando efeito no botão saiba mais de esconder e mostrar as informações
+botaoSaibaMais.addEventListener("click", () => {
+    sessaoSaibaMais.classList.toggle("sessao-ativada")
+})
